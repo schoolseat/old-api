@@ -1,0 +1,17 @@
+{
+  "name": "api-escolaplus",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "author": "DrethenRain",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "knex": "knex"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {}
+}
