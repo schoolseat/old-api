@@ -1,6 +1,6 @@
 # API Escola+
-🇺🇸
-This project is a simple api that uses [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) and [SQLite](https://www.sqlite.org/index.html/).
+
+### 🇺🇸 - This project is a simple api that uses [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) and [SQLite](https://www.sqlite.org/index.html/).
 
 ## Install and run
 
@@ -21,7 +21,7 @@ The app in the development mode.
 Open [http://localhost:3333](http://localhost:3333) to view it in your browser.
 
 
-# You may use postman or insomnia
+## You may use postman or insomnia
 
 ### Useful exemples
 
@@ -36,10 +36,9 @@ Open [http://localhost:3333](http://localhost:3333) to view it in your browser.
 ### TODO:
 - [x] Create routes for delete and update user.
 - [ ] Create router for lessons.
-- [ ] Make it 100% functional.
+- [ ] Make it 100% functional.  
 
-🇧🇷
-Esse projeto é uma Api que usa [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) e [SQLite](https://www.sqlite.org/index.html/).
+### 🇧🇷 - Esse projeto é uma Api que usa [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) e [SQLite](https://www.sqlite.org/index.html/).
 
 ## Instalação e execução
 
@@ -49,7 +48,7 @@ Para instalar as dependencias execute:
 
 ### `yarn install`
 
-para a migração e criação do SQLite execute:
+Para a migração e criação do SQLite execute:
 
 ### `yarn knex migrate:latest`
 
@@ -60,9 +59,9 @@ E por ultimo você pode ligar a Api por meio do comando:
 Abra [http://localhost:3333](http://localhost:3333) no seu navegador para visualizar a API.
 
 
-# You may use postman or insomnia
+## Você pode usar postman ou insomnia.
 
-### Useful exemples
+### Exemplos de uso.
 
 | URL            | Method | Info               |
 |----------------|--------|--------------------|
@@ -73,9 +72,9 @@ Abra [http://localhost:3333](http://localhost:3333) no seu navegador para visual
 | /api/users/:id | PATCH  | Atualiza um usuario pelo id. |
 
 ### TODO:
-- [x] Create routes for delete and update user.
-- [ ] Create router for lessons.
-- [ ] Make it 100% functional.
+- [x] Criar rotas para excluir e atualizar o usuário.
+- [ ] Criar rota para aulas.
+- [ ] Deixar 100% funcional.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
