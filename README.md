@@ -39,7 +39,6 @@ Open [http://localhost:3333](http://localhost:3333) to view it in your browser.
 - [ ] Make it 100% functional.
 
 🇧🇷
-
 Esse projeto é uma Api que usa [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) e [SQLite](https://www.sqlite.org/index.html/).
 
 ## Instalação e execução
