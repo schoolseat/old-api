@@ -1,24 +1,28 @@
-exports.up = function(knex, Promise) {
-  return knex.schema.createTable('users', function(table) {
+/* eslint-disable no-unused-vars */
+function Up(knex, Promise) {
+  return knex.schema.createTable('users', (table) => {
     table.increments();
 
     table.string('name')
       .notNullable();
 
     table.string('email')
-			.notNullable();
+      .notNullable();
 
     table.string('password')
-			.notNullable();
+      .notNullable();
 
     table.timestamp('created_at')
-			.defaultTo(knex.fn.now())
+      .defaultTo(knex.fn.now());
 
     table.timestamp('updated_at')
-			.defaultTo(knex.fn.now())
-  })
-};
+      .defaultTo(knex.fn.now());
+  });
+}
 
-exports.down = function(knex, Promise) {
+function Down(knex, Promise) {
   return knex.schema.dropTable('users');
-};
+}
+
+exports.up = Up;
+exports.down = Down;

@@ -6,13 +6,13 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './src/database/dev.sqlite',
-			charset: 'utf8',
+      charset: 'utf8',
 
     },
 
     migrations: {
-      directory: __dirname + '/src/database/migrations',
+      directory: `${__dirname}/src/database/migrations`,
     },
   },
-	useNullAsDefault: true,
+  useNullAsDefault: true,
 };
