@@ -11,8 +11,8 @@ router.get('/', (req, res) => {
 */
 router.post('/users', (req, res) => {
   Users.add(req.body)
-    .then((_Users) => {
-      res.status(200).json(_Users);
+    .then((users) => {
+      res.status(200).json(users);
     })
     .catch((error) => {
       res.status(500).json({
@@ -27,8 +27,8 @@ router.post('/users', (req, res) => {
 
 router.get('/users', (req, res) => {
   Users.find()
-    .then((_Users) => {
-      res.status(200).json(_Users);
+    .then((users) => {
+      res.status(200).json(users);
     })
     .catch((error) => {
       res.status(500).json({
@@ -44,9 +44,9 @@ router.get('/users/:id', (req, res) => {
   const { id } = req.params;
 
   Users.findById(id)
-    .then((_Users) => {
-      if (_Users) {
-        res.status(200).json(_Users);
+    .then((users) => {
+      if (users) {
+        res.status(200).json(users);
       } else {
         res.status(404).json({
           message: 'this user is not exists',
@@ -89,9 +89,9 @@ router.patch('/users/:id', (req, res) => {
   const changes = req.body;
 
   Users.update(id, changes)
-    .then((_Users) => {
-      if (_Users) {
-        res.status(200).json(_Users);
+    .then((users) => {
+      if (users) {
+        res.status(200).json(users);
       } else {
         res.status(404).json({ message: 'user not found' });
       }
