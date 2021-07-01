@@ -1,11 +1,15 @@
 /* eslint-disable no-unused-vars */
 const router = require('express').Router();
+
+const marked = require('marked');
+const fs = require('fs');
 const Users = require('../../database/models/Users');
 
 router.get('/', (req, res) => {
-  res.json({ message: 'see readme.md for more information' });
+  const path = `${__dirname}/ROUTES.md`;
+  const file = fs.readFileSync(path, 'utf8');
+  res.send(marked(file.toString()));
 });
-
 /**
  * @description Create user
 */
