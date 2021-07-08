@@ -1,4 +1,4 @@
-# API Escola+
+# API SchoolSeat
 
 ### 🇺🇸 - This project is a simple api that uses [ExpressJS](https://expressjs.com/pt-br/), [KnexJS](http://knexjs.org/) and [SQLite](https://www.sqlite.org/index.html/).
 
