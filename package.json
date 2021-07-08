@@ -1,5 +1,5 @@
 {
-  "name": "api-escolaplus",
+  "name": "api-schoolseat",
   "version": "1.0.2",
   "main": "./src/server.js",
   "author": "DrethenRain",
